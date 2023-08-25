@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plataforma Datos - DEDV</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>BIENVENID@S</h1>
+
+    {% if logout_message %}
+    <p>{{ logout_message }}</p>
+    {% endif %}
+    <!-- Formulario de usuario/contraseña -->
+    <div class="login-form">
+        <form action="/login" method="post">
+            {% if error %}
+            <div class="error-message">{{ error }}</div>  <!-- Muestra el mensaje de error si existe -->
+            {% endif %}
+        <input type="text" name="username" placeholder="Usuario" required><br>
+        <input type="password" name="password" placeholder="Contraseña" required><br>
+        <input type="submit" value="Iniciar sesión">
+        </form>
+    </div>
+
+
+</body>
+</html>

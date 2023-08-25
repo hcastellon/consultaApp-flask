@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #2c0b8e;
+}
+input[type="submit"]:hover {
+  background-color: #3d348b;
+}
+input[type="submit"]:active {
+  top: 2px;
+}
+
+.resultados-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.resultados-table th,
+.resultados-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.resultados-table th {
+  background-color: #f2f2f2;
+}
+
+.resultados-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.perfil-menu {
+  display: none;
+}
+
+.perfil {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contenedor-principal {
+  position: relative;
+}
+
+.login-form {
+  width: 300px; /* Establece el ancho deseado para el formulario */
+  margin: 0 auto; /* Aplica márgenes automáticos para centrar el formulario */
+}
+
+.resultados-container {
+  width: 80%; /* Establece un ancho deseado para los resultados */
+  margin: 0 auto; /* Aplica márgenes automáticos para centrar los resultados */
+}
+
+
+
+
+

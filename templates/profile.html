@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- ... -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="perfil" id="perfil-dropdown">
+  <!-- Avatar del usuario -->
+  <img src="ruta_del_avatar" alt="Avatar" class="avatar">
+
+  <!-- Menú desplegable -->
+  <ul class="perfil-menu">
+    <li><a href="/perfil">Mi perfil</a></li>
+    <li><a href="/configuracion">Configuración</a></li>
+    <li><a href="/logout">Cerrar sesión</a></li>
+  </ul>
+</div>
+<script>
+  $(document).ready(function() {
+      // Seleccionar el contenedor del perfil
+      var perfilDropdown = $('#perfil-dropdown');
+
+      // Agregar un manejador de eventos al avatar
+      perfilDropdown.on('click', function() {
+        // Seleccionar el menú desplegable
+        var perfilMenu = perfilDropdown.find('.perfil-menu');
+
+        // Alternar la visibilidad del menú desplegable
+        perfilMenu.toggle();
+      });
+    });
+</script>
+</body>
+</html>
+
